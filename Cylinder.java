@@ -1,4 +1,4 @@
-public class Cylinder extends Circle{
+public class Cylinder extends Circle implements Volume{
 
     private double height;
 
@@ -11,7 +11,11 @@ public class Cylinder extends Circle{
 	return height;
     }
 
+    public double getVolume() {
+	return Math.PI * Math.pow(getRadius(), 2) * getHeight();
+    }
+    
     public String toString(){
-	return "FIXME!";
+	return "Radius: " + getRadius() + "\nHeight: " + getHeight();
     }
 }
