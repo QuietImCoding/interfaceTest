@@ -4,18 +4,17 @@ public class Driver{
 	return (char)('A'+(int)(Math.random()*26));
     }
 
-    /*//UNCOMMENT THIS WHEN YOU DO Area
+    //UNCOMMENT THIS WHEN YOU DO Area
       public static Area makeRandomAreaShape(){
-      String name = ""+letter()+"-2d";
-      double value =Math.round(Math.random()*10.0);
-      if(Math.random() < 0.5){
-      return new Circle(value,name);
-      }else{
-      double value2 =Math.round(Math.random()*10.0);
-      return new Rectangle(value,value2,name);
+	  String name = ""+letter()+"-2d";
+	  double value =Math.round(Math.random()*10.0);
+	  if(Math.random() < 0.5){
+	      return new Circle(value,name);
+	  }else{
+	      double value2 =Math.round(Math.random()*10.0);
+	      return new Rectangle(value,value2,name);
+	  }
       }
-      }
-      /*
 
       /* //UNCOMMENT THIS WHEN YOU DO Volume
       public static Volume makeRandomVolumeShape(){
@@ -38,7 +37,7 @@ public class Driver{
 
     public static void main(String[]args){
 	
-	/*//UNCOMMENT THIS WHEN YOU DO AREA
+	//UNCOMMENT THIS WHEN YOU DO AREA
 	  Area[] twos = new Area[5];
 	  for(int i = 0; i < twos.length; i++){
 	  twos[i]=makeRandomAreaShape();
@@ -48,7 +47,7 @@ public class Driver{
 	  System.out.println(a);
 	  System.out.println(a.getArea());
 	  }
-	*/
+	
 
 	/*//UNCOMMENT THIS WHEN YOU DO VOLUME
 	  Volume[] threes = new Volume[6];
